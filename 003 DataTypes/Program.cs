@@ -60,6 +60,33 @@
             string hello = "Hello"; // Stores a sequence of characters, surrounded by double quotes.
                                     // Size  2 bytes per character
 
+            // Other types
+
+            System.Int32 number = 56; //System type, is the full name of the type int
+
+            // Implicit typing
+
+            //For implicit typing, the var keyword is used instead of the data type name.
+            //Then, during compilation, the compiler itself infers the data type based on the assigned value
+
+            var word = "Hello world"; //the variable word is assigned a string, so this variable will be of type string
+            var c2 = 256; //Since by default all integer values ​​are considered as values ​​of type int, therefore, in the end, the variable c will have type int
+
+            // var c = null; //This code don't work with type var. You can't assign null to an implicitly-typed variable
+
+            // This code don't work
+
+            //var c3; //Implicity typed variables must be initialized
+
+            
+
+
+
+
+
+
+
+
 
 
 
