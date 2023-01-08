@@ -30,16 +30,20 @@
 
             long l1 = -23432353253543L; // Store whole number from –9 223 372 036 854 775 808 to 9 223 372 036 854 775 807
             long l2 = 2343256546576765L;// By default is signed Size 8 bytes = 64 bit
+            // We add L to the number because by default number will be readed like integer literal
 
             ulong l3 = 567346873685734687L;// unsigned long type store whole number from 0 to 18 446 744 073 709 551 615
-                                          // Size is  8 bytes = 64 bit
+                                           // Size is  8 bytes = 64 bit
 
             // Type store Fractional numbers
+
+            //When assigning values, keep in mind the following subtlety: all real literals (fractional numbers) are treated as double values.
+            //And to indicate that a fractional number represents a float type or a decimal type, you need to add a suffix to the literal: F / f - for float and M / m - for decimal.  
 
             float f1 = 45.345345F; //Note that you should end the value with an "F" for floats
                                    //Stores fractional numbers. Sufficient for storing 6 to 9 decimal digits
                                    // Size 4 bytes = 32but
-            double d1 = 46.123213D; //Note that you should end the value with an "D" for doubles
+            double d1 = 46.123213; //Note that you should end the value with an "D" for doubles
                                     // Stores fractional numbers. Sufficient for storing 15-17 decimal digits
                                     // Size 8 bytes
             decimal d2 = 46.34543643M; //Note that you should end the value with an "M" for decimal  (M money)
